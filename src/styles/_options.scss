@@ -11,7 +11,7 @@
         
         &_title {
             position: relative;
-            top: -10vw;
+            top: 0;
             bottom: 0;
             text-align: left;
             padding-right: 0.375rem;
@@ -20,7 +20,7 @@
         &_img {
             
             position: relative;
-            top: -10vw;
+            top: 0;
             width: 100%;
             border: 0;
             height: auto;
@@ -38,7 +38,7 @@
         padding: 4.5rem 0;
         
         &__linha {
-            top: 262vh;
+            top: 282vh;
         }
     }
 
@@ -75,7 +75,7 @@
         border: 0;
         padding: 4.5rem 0;
         &__linha2 {
-            top: 388vh;
+            top: 409vh;
         }
     }
 
@@ -101,7 +101,7 @@
         padding: 4.5rem 0;
 
         &__linha3 {
-            top: 512vh;
+            top: 530vh;
         }
     }
 
@@ -169,8 +169,9 @@
     }
     .esp4 {
         padding: 4.5rem 0;
+        
         &__linha4 {
-            top: 645vh;
+            top: 667vh;
         }
     }
 }

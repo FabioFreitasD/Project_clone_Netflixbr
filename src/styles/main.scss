@@ -2,6 +2,7 @@
 @use './variaveis';
 @use './sectionPipoca';
 @use './options';
+@use './faq.scss';
 
 * {
     margin: 0;
@@ -60,19 +61,24 @@ body {
     border-radius: calc(0.25rem - 0.0625rem);
     cursor: pointer;
     text-align: center;
-    font-style: inherit;
-    font-family: inherit;
     transition: inherit;
+    white-space: nowrap;
 } 
 
-@mixin inputSelect {
-    font-weight: bold;
-    background: transparent;
+@mixin inputStyle {
+    background: rgba(0, 0, 0, 0.7);
     border-radius: calc(0.25rem - 0.0625rem);
-    border: 1px solid black;
+    border: 1px solid white;
     color: variaveis.$corDosTextos;
-    font-style: inherit;
-    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    word-spacing: normal;
+    text-align: left;
+    text-rendering: auto;
+    width: 100%;
+    padding: 1.5rem 8rem 0.6rem;
+    padding-left: 1rem;
+    cursor: text;
 }
 
 @mixin linha {
@@ -107,8 +113,8 @@ body {
     @include button;
 }
 
-.inputSelect {
-    @include inputSelect;
+.inputStyle {
+    @include inputStyle;
 }
 
 .SeparadorDeSecao {
