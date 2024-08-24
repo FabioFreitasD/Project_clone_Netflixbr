@@ -1,0 +1,42 @@
+.infantil {
+    max-width: 100%;
+    display: block;
+    margin: 0 1em;
+    text-align: center;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    
+    &__items {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        margin: auto;
+        text-align: left;
+        padding-bottom: 35vh;
+
+        
+        @media(min-width: 768px) and (max-width: 1024px) {
+            padding-bottom: 5vh;
+        }
+
+        &_title {
+            
+            p {
+                margin: 1rem;
+            }
+        }
+
+        &_img {
+            
+            img {
+                width: 25rem;
+            }
+        }
+
+        @media(max-width: 768px) {
+            display: block;
+            text-align: center;
+            padding-bottom: 0;
+        }
+    }
+}

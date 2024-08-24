@@ -1,0 +1,55 @@
+.tec {
+    max-width: 100%;
+    display: block;
+    margin: 0 1em;
+    text-align: center;
+
+    &__items {
+        padding-bottom: 20vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+
+        @media(max-width: 768px) {
+            display: block;
+            text-align: center;
+            padding-top: 2rem;
+        }
+        
+        &_title {
+            padding-bottom: 3rem;
+            text-align: left;
+            padding-right: 0.375rem;
+
+            @media(max-width: 768px) {
+                padding-right: 0.375rem;
+                padding-bottom: 0;
+                text-align: center;
+            }
+        }
+
+        &_img {
+            position: relative;
+            top: 0;
+            width: 100%;
+            border: 0;
+            height: auto;
+            padding-top: 3.5rem;
+
+            img {
+                margin: auto;
+                width: 26rem;
+            }
+
+            @media(max-width: 768px) {
+                padding-bottom: 0;
+                padding-top: 0;
+                align-items: center;
+
+                img {
+                    width: 20rem;
+                }
+            }
+        }
+    }
+}
